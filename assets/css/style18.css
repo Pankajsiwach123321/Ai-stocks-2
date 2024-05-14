@@ -592,3 +592,24 @@
     max-width: 320px !important;
   }
 }
+
+
+
+.trade_shares_active_btns {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(150.02deg, #00ffe1 12.76%, #6e5df6 91.81%) border-box;
+}
+
+.active_timeline_dot {
+  border-color: transparent;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.active_timeline_dot::before {
+  background: linear-gradient(150.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+  top: 0;
+  z-index: -1;
+  /* Push the pseudo-element behind the content */
+}

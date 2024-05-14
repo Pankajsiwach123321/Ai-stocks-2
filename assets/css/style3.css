@@ -190,7 +190,7 @@
     /* Adjust as needed */
     height: 0%;
     transition: all 0.3s ease;
-    background: linear-gradient(150.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    background: linear-gradient(95.56deg, #A445B2 20.06%, #D41872 49.55%, #FF0066 76.76%);
     z-index: 1;
 }
 
@@ -203,7 +203,7 @@
     width: 1px;
     /* Adjust as needed */
     height: 0%;
-    background: linear-gradient(320.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    background: linear-gradient(95.56deg, #A445B2 20.06%, #D41872 49.55%, #FF0066 76.76%);
     z-index: 1;
 }
 
@@ -1492,6 +1492,63 @@
     left: -20%;
     overflow: hidden;
     position: absolute;
+}
+
+.ai_red .trade_line_first::after,
+.ai_red .active_timeline_dot::before,
+.ai_red .trade_timeline_gradient::after,
+.ai_red .trade_line_second::after {
+    background:
+        linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+
+}
+
+.ai_red .trade_shares_btns {
+    border: 1px solid #FFFFFF29;
+    border-radius: 7px;
+    padding: 0 32px;
+    background-color: var(--lightblack) !important;
+    opacity: 70%;
+    font-weight: 400 !important;
+}
+
+.ai_red .trade_shares_active_btns {
+    background: linear-gradient(#010407, #010407) padding-box,
+        linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%) border-box !important;
+    opacity: 100%;
+    font-weight: 700 !important;
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ai_red .open_account_button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 11.34px 23px;
+    box-shadow: 23px 20px 20px 22px #0084ff00 inset, 0px 2px 10px 0px #00000026;
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.ai_red .open_account_button:hover {
+    background: #FF0066 !important;
+    box-shadow: 23px 20px 20px 22px #FF0066 inset !important;
+}
+
+.ai_red .gredient_text {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ai_red .trade_shares_active_btns .gradient_red_text_active {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700 !important;
 }
 
 @media (min-width: 768px) {

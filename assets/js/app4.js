@@ -407,54 +407,6 @@ window.onclick = function (event) {
         document.body.style.overflow = "";
     }
 };
-
-// //=============button not allow before fill==========
-// const popupForms = document.querySelectorAll(".formpopup_form");
-// const submitButtons = document.querySelectorAll(".popup-fromsubmisition");
-
-// popupForms.forEach((form) => {
-//     form.addEventListener("input", () => {
-//         let isValid = true;
-//         form.querySelectorAll("input, select, textarea").forEach((element) => {
-//             if (!element.checkValidity()) {
-//                 isValid = false;
-//                 return;
-//             }
-//         });
-//         submitButtons.forEach((submitButton) => {
-//             submitButton.disabled = !isValid;
-//             submitButton.style.cursor = isValid ? "pointer" : "not-allowed";
-//         });
-//     });
-// });
-// const namepopup = document.querySelector(".namepopup");
-// const lastnamepopup = document.querySelector(".lastnamepopup");
-// const numberpopup = document.querySelector(".numberpopup");
-// const emailpopup = document.querySelector(".emailpopup");
-// const submitpopup = document.querySelector(".submitpopup");
-// const regexpopup = {
-//     Name: /^[a-zA-Z\s]+$/,
-//     LastName: /^[a-zA-Z\s]+$/,
-//     Number: /^\d{10}$/,
-//     Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
-// };
-
-// submitpopup.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     if (
-//         regexpopup.Name.test(namepopup.value) &&
-//         regexpopup.LastName.test(lastnamepopup.value) &&
-//         regexpopup.Number.test(numberpopup.value) &&
-//         regexpopup.Email.test(emailpopup.value)
-//     ) {
-//         alert(" from submit successfully");
-//         namepopup.value = "";
-//         lastnamepopup.value = "";
-//         numberpopup.value = "";
-//         emailpopup.value = "";
-//     }
-// });
-
 //============trade-section================
 const lottiePlayers = {
     company: {
@@ -497,7 +449,7 @@ const changeImageHandler = (value) => {
         automaticSwitching = true; // Set automatic switching flag to true
         startAutomaticButtonSwitching(); // Restart automatic button switching
     }
-
+    changeLottiePlayer(value);
     // Call the changeLottiePlayer function with the clicked button value
     // changeLottiePlayer(value);
 };
@@ -557,7 +509,7 @@ const changeLottiePlayer = (value) => {
 
     // Activate dots based on the clicked button
     const allDots = document.querySelectorAll(".timeline_dot");
-    allDots.forEach((dot) => dot.classList.remove("active_timeline_dot"));
+    allDots.forEach((dot) => dot.classList.remove("active_timeline_dot2"));
     if (value === "company") {
         document
             .querySelector("[data-title='company'] .timeline_dot")
@@ -570,10 +522,10 @@ const changeLottiePlayer = (value) => {
             .classList.remove("tradeLinetransitionFirst");
         document
             .querySelector(".trade_line_second")
-            .classList.remove("trade_timeline_gradient");
+            .classList.remove("trade_timeline_gradient2");
         document
             .querySelector(".trade_timeline")
-            .classList.remove("trade_timeline_gradient");
+            .classList.remove("trade_timeline_gradient2");
     } else if (value === "invest") {
         document
             .querySelector("[data-title='company'] .timeline_dot")
@@ -583,7 +535,7 @@ const changeLottiePlayer = (value) => {
             .classList.add("active_timeline_dot2");
         document
             .querySelector(".trade_line_3rd")
-            .classList.add("trade_timeline_gradient");
+            .classList.add("trade_timeline_gradient2");
         document
             .querySelector(".trade_line_second")
             .classList.add("tradeLinetransitionFirst");
@@ -592,18 +544,18 @@ const changeLottiePlayer = (value) => {
             .classList.remove("tradeLinetransitionFirst");
         document
             .querySelector(".trade_timeline")
-            .classList.remove("trade_timeline_gradient");
+            .classList.remove("trade_timeline_gradient2");
     } else if (value === "shares") {
-        allDots.forEach((dot) => dot.classList.add("active_timeline_dot"));
+        allDots.forEach((dot) => dot.classList.add("active_timeline_dot2"));
         document
             .querySelector(".trade_timeline")
-            .classList.add("trade_timeline_gradient");
+            .classList.add("trade_timeline_gradient2");
         document
             .querySelector(".trade_line_3rd")
             .classList.remove("tradeLinetransitionFirst");
         document
             .querySelector(".trade_line_3rd")
-            .classList.remove("trade_timeline_gradient");
+            .classList.remove("trade_timeline_gradient2");
         document
             .querySelector(".trade_line_second")
             .classList.remove("tradeLinetransitionFirst");
@@ -613,7 +565,7 @@ const changeLottiePlayer = (value) => {
             .classList.add("active_timeline_dot2");
         document
             .querySelector(".trade_line_3rd")
-            .classList.remove("trade_timeline_gradient");
+            .classList.remove("trade_timeline_gradient2");
     }
 
     // Play the animation

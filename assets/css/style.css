@@ -87,6 +87,7 @@
     --off-black4: #010101;
     --off-black5: #15171a;
     --gray: #4d4f51;
+    --gray-400: #4D4D4D;
     --green: #00ffe1;
     --c-gray: #cccecf;
     --c-black-100: #010101;
@@ -119,6 +120,10 @@
 
 .cc-gray {
     color: var(--cc-gray);
+}
+
+.gray-400 {
+    color: var(--gray-400);
 }
 
 .cd-gray {

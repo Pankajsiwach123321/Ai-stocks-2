@@ -1961,7 +1961,7 @@
 
 @media (min-width:1200px) {
     .body_bg_img2 {
-        background-image: url("/assets/images/png/body-bg-img2.png") !important;
+        background-image: url("/assets/images/webp/bgbody.webp") !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

@@ -671,6 +671,7 @@
     display: flex;
     align-items: start !important;
     padding: 9px 3px !important;
+    font-size: var(--fs-xs) !important;
 }
 
 
@@ -702,6 +703,7 @@
     color: var(--cd-gray);
     padding: 6px 25px 0px 3px !important;
     padding-top: 0px !important;
+    font-size: var(--fs-xs) !important;
 }
 
 .faq .accordion-button:focus {
@@ -714,7 +716,7 @@
     max-width: 558px;
     padding: 12px;
     border-radius: 8px;
-    background-color: var(--black);
+    background-color: transparent;
     position: relative;
     z-index: 1;
 }

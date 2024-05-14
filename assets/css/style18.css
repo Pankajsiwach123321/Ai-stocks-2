@@ -127,13 +127,13 @@
 .popup_form {
   padding: 20px;
   background: #ffffff;
-  border: 1px solid #0000001A;
+  border: 1px solid #0000001A !important;
   border-radius: 15px;
   max-width: 528px;
 }
 
 .popup_input {
-  border: 1px solid #00000033;
+  border: 1px solid #00000033 !important;
   outline: none;
   border-radius: 6px;
   padding: 13px;
@@ -185,6 +185,7 @@
 
 .nividia-pink-topellipse {
   width: 240px;
+  z-index: -1;
   height: 240px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(200px);
@@ -196,6 +197,7 @@
 .nividia-pink-bottomellipse {
   width: 240px;
   height: 240px;
+  z-index: -1;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(200px);
   position: absolute;
@@ -205,6 +207,7 @@
 
 .microsoft-pink-ellipse {
   width: 346px;
+  z-index: -1;
   height: 346px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(200px);
@@ -215,6 +218,7 @@
 
 .aws-pink-ellipse {
   width: 204px;
+  z-index: -1;
   height: 204px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(200px);
@@ -225,6 +229,7 @@
 
 .plantir-pink-ellipse {
   width: 280px;
+  z-index: -1;
   height: 280px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(250px);
@@ -235,6 +240,7 @@
 
 .crowd-pink-ellipse {
   width: 304px;
+  z-index: -1;
   height: 304px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(250px);
@@ -245,6 +251,7 @@
 
 .ui-pink-ellipse {
   width: 244px;
+  z-index: -1;
   height: 204px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(300px);
@@ -255,6 +262,7 @@
 
 .ui-pink-ellipse2 {
   width: 25px;
+  z-index: -1;
   height: 250px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(250px);
@@ -265,6 +273,7 @@
 
 .arista-pink-ellipse2 {
   width: 220px;
+  z-index: -1;
   height: 226px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   filter: blur(250px);
@@ -327,6 +336,7 @@
   width: 365px;
   filter: blur(500px);
   top: -60%;
+  z-index: -1;
   right: -60%;
   overflow: hidden;
   position: absolute;
@@ -339,6 +349,7 @@
   filter: blur(600px);
   bottom: -40%;
   left: -20%;
+  z-index: -1;
   overflow: hidden;
   position: absolute;
 }
@@ -529,6 +540,7 @@
     max-width: 420px !important;
   }
 
+
   .blur_pink_btn {
     padding: 12px;
     z-index: 1;
@@ -565,6 +577,11 @@
 
   .w-49 {
     width: 49px;
+  }
+
+  .lh-max-sm-25 {
+    line-height: 25px;
+    ;
   }
 }
 

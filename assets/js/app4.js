@@ -206,12 +206,49 @@ AiStockform.addEventListener("input", function () {
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.getElementById("fullYear").textContent = currentYear;
-// preloader;
-setTimeout(() => {
-    document.getElementById("preloderred").classList.add("d-none");
-    document.body.classList.remove("overflow_hidden");
-}, 1700);
 
+document
+    .getElementById("pop1")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop2")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop3")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop4")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop5")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop6")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+document
+    .getElementById("pop7")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+        this.reset();
+    });
 // back to top 
 window.addEventListener("scroll", function () {
     let backtotop = document.getElementById("backtotop");
@@ -371,52 +408,52 @@ window.onclick = function (event) {
     }
 };
 
-//=============button not allow before fill==========
-const popupForms = document.querySelectorAll(".formpopup_form");
-const submitButtons = document.querySelectorAll(".popup-fromsubmisition");
+// //=============button not allow before fill==========
+// const popupForms = document.querySelectorAll(".formpopup_form");
+// const submitButtons = document.querySelectorAll(".popup-fromsubmisition");
 
-popupForms.forEach((form) => {
-    form.addEventListener("input", () => {
-        let isValid = true;
-        form.querySelectorAll("input, select, textarea").forEach((element) => {
-            if (!element.checkValidity()) {
-                isValid = false;
-                return;
-            }
-        });
-        submitButtons.forEach((submitButton) => {
-            submitButton.disabled = !isValid;
-            submitButton.style.cursor = isValid ? "pointer" : "not-allowed";
-        });
-    });
-});
-const namepopup = document.querySelector(".namepopup");
-const lastnamepopup = document.querySelector(".lastnamepopup");
-const numberpopup = document.querySelector(".numberpopup");
-const emailpopup = document.querySelector(".emailpopup");
-const submitpopup = document.querySelector(".submitpopup");
-const regexpopup = {
-    Name: /^[a-zA-Z\s]+$/,
-    LastName: /^[a-zA-Z\s]+$/,
-    Number: /^\d{10}$/,
-    Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
-};
+// popupForms.forEach((form) => {
+//     form.addEventListener("input", () => {
+//         let isValid = true;
+//         form.querySelectorAll("input, select, textarea").forEach((element) => {
+//             if (!element.checkValidity()) {
+//                 isValid = false;
+//                 return;
+//             }
+//         });
+//         submitButtons.forEach((submitButton) => {
+//             submitButton.disabled = !isValid;
+//             submitButton.style.cursor = isValid ? "pointer" : "not-allowed";
+//         });
+//     });
+// });
+// const namepopup = document.querySelector(".namepopup");
+// const lastnamepopup = document.querySelector(".lastnamepopup");
+// const numberpopup = document.querySelector(".numberpopup");
+// const emailpopup = document.querySelector(".emailpopup");
+// const submitpopup = document.querySelector(".submitpopup");
+// const regexpopup = {
+//     Name: /^[a-zA-Z\s]+$/,
+//     LastName: /^[a-zA-Z\s]+$/,
+//     Number: /^\d{10}$/,
+//     Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
+// };
 
-submitpopup.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (
-        regexpopup.Name.test(namepopup.value) &&
-        regexpopup.LastName.test(lastnamepopup.value) &&
-        regexpopup.Number.test(numberpopup.value) &&
-        regexpopup.Email.test(emailpopup.value)
-    ) {
-        alert(" from submit successfully");
-        namepopup.value = "";
-        lastnamepopup.value = "";
-        numberpopup.value = "";
-        emailpopup.value = "";
-    }
-});
+// submitpopup.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     if (
+//         regexpopup.Name.test(namepopup.value) &&
+//         regexpopup.LastName.test(lastnamepopup.value) &&
+//         regexpopup.Number.test(numberpopup.value) &&
+//         regexpopup.Email.test(emailpopup.value)
+//     ) {
+//         alert(" from submit successfully");
+//         namepopup.value = "";
+//         lastnamepopup.value = "";
+//         numberpopup.value = "";
+//         emailpopup.value = "";
+//     }
+// });
 
 //============trade-section================
 const lottiePlayers = {
@@ -591,3 +628,8 @@ const startAutomaticButtonSwitching = () => {
 
 // Start automatic button switching
 startAutomaticButtonSwitching();
+// preloader;
+setTimeout(() => {
+    document.getElementById("preloderred").classList.add("d-none");
+    document.body.classList.remove("overflow_hidden");
+}, 1700);

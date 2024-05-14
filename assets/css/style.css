@@ -2444,7 +2444,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-xs: 21.79px;
         --lh-xsm: 21px !important;
         --lh-sm: 22px !important;
-        --lh-md: 15px !important;
+        --lh-md: 20px !important;
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
@@ -2572,6 +2572,10 @@ numberinput-header .numberinput-header[type="number"] {
 
     .max-sm-fs-10 {
         font-size: 10px !important;
+    }
+
+    .lh-max-sm-15 {
+        line-height: 15px !important;
     }
 }
 

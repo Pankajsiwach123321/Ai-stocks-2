@@ -13,7 +13,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Ai-stocks</title>
     <meta name="title" content="Ai-stock" />
-    <meta name="description" content="Dive into the Explosive Momentum of 2024 with the Top 7 Fastest-Growing AI Stocks!" />
+    <meta name="description"
+        content="Dive into the Explosive Momentum of 2024 with the Top 7 Fastest-Growing AI Stocks!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
     <meta property="og:title" content="Ai-stock" />
@@ -39,7 +40,7 @@
     </div>
     <!-- header -->
     <div class=" overflow-x-clip">
-        <header class=" bg-hero-img-2 mw_1920 position-relative overflow-x-clip  z-1">
+        <header class=" bg-hero-img-2 mw_1920 pb-2 position-relative overflow-x-clip  z-1">
             <nav class="backdrop-20 py-12 nav-background position-relative  z-1">
                 <div class="container">
                     <div class=" d-flex  justify-content-between align-items-center ">
@@ -680,14 +681,14 @@
         <!-- pop up section  -->
         <section class="position-relative mw_1920 z-3 overflow-x-clip mt-md-5 pt-5">
             <div class="nividia-pink-topellipse d-lg-block d-none"></div>
-            <div class="nividia-pink-bottomellipse"></div>
+            <div class="nividia-pink-bottomellipse d-none  d-sm-block"></div>
             <div class="microsoft-pink-ellipse d-md-block d-none"></div>
-            <div class="aws-pink-ellipse"></div>
-            <div class="plantir-pink-ellipse"></div>
-            <div class="ui-pink-ellipse2"></div>
-            <div class="crowd-pink-ellipse"></div>
-            <div class="ui-pink-ellipse"></div>
-            <div class="arista-pink-ellipse2"></div>
+            <div class="aws-pink-ellipse d-none  d-sm-block"></div>
+            <div class="plantir-pink-ellipse d-none  d-sm-block"></div>
+            <div class="ui-pink-ellipse2 d-none  d-sm-block"></div>
+            <div class="crowd-pink-ellipse d-none  d-sm-block"></div>
+            <div class="ui-pink-ellipse d-none  d-sm-block"></div>
+            <div class="arista-pink-ellipse2 d-none  d-sm-block"></div>
             <div class="position-relative mt-xl-5 px-3 z-1">
                 <h2 class="white fs_2xxl fw-bold lh_11xl text-center ff_opensans">
                     Top 7
@@ -709,7 +710,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             NVIDIA Corporation, a powerhouse in GPU
                             technology
                             and AI innovation, offers investors compelling opportunities. With dominance in gaming and
@@ -722,7 +723,8 @@
                             financial
                             track record, NVIDIA remains a top choice for savvy investors.</p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
@@ -776,7 +778,8 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+
+                                        <form id="pop1" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -803,11 +806,14 @@
                                             <label
                                                 class="ff_opensans fw-normal fs_xs text-black lh-xs text-capitalize mb-2">Phone
                                                 Number</label>
-                                            <input required type="number"
+                                            <input required type="number" pattern="/^-?\d+\.?\d*$/"
+                                                onKeyPress="if(this.value.length==10) return false;"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-fromsubmisition">Start
+                                                Trading</button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -863,7 +869,7 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+                                        <form id="pop2" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -890,11 +896,13 @@
                                             <label
                                                 class="ff_opensans fw-normal fs_xs text-black lh-xs text-capitalize mb-2">Phone
                                                 Number</label>
-                                            <input required type="number"
+                                            <input required type="number" pattern="/^-?\d+\.?\d*$/"
+                                                onKeyPress="if(this.value.length==10) return false;"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 ">Start
+                                                Trading</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -907,7 +915,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             Microsoft A tech giant with diverse solutions for investors, including Azure cloud services.
                             With
                             market
@@ -917,7 +925,8 @@
                             enterprise software, Azure cloud computing, and innovation make it an attractive investment.
                         </p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup2"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
@@ -933,7 +942,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             Amazon A tech juggernaut with AWS cloud services, offering diverse solutions for investors.
                             With
                             market
@@ -944,7 +953,8 @@
                             technological
                             prowess, Amazon remains a top choice for investors</p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup3"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
@@ -994,7 +1004,7 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+                                        <form id="pop3" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -1024,8 +1034,9 @@
                                             <input required type="number"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-formsubmisition">Start
+                                                Trading</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -1080,7 +1091,7 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+                                        <form id="pop4" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -1110,8 +1121,9 @@
                                             <input required type="number"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-formsubmisition">Start
+                                                Trading</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -1125,7 +1137,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             Microsoft A tech giant with diverse solutions for investors, including Azure cloud services.
                             With
                             market
@@ -1135,7 +1147,8 @@
                             enterprise software, Azure cloud computing, and innovation make it an attractive investment.
                         </p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup4"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
@@ -1152,7 +1165,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             CrowdStrike Shaping the Future of Cybersecurity with Advanced AI Solutions. As a trailblazer
                             in
                             threat
@@ -1166,7 +1179,8 @@
                             unparalleled
                             growth potential and technological excellence.</p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup5"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
                         <div id="popup5" class="popup">
                             <div class=" z-3 bgpopup overflow-x-clip position-relative">
@@ -1202,7 +1216,7 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+                                        <form id="pop5" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -1232,8 +1246,10 @@
                                             <input required type="number"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-formsubmisition">Start
+                                                Trading</button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -1287,7 +1303,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             UiPath Powering Automation with Intelligent AI Solutions. As a leader in robotic process
                             automation
                             (RPA),
@@ -1299,11 +1315,12 @@
                             opportunity
                             for investors seeking growth and innovation in the AI stock sector.</p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup6"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
-                    <div id="popup6" class="popup m-3">
+                    <div id="popup6" class="popup ">
                         <div class=" z-3 bgpopup overflow-x-clip position-relative">
                             <div class="popup-pink-topright-ellipse "></div>
                             <div class="popup-pink-bottomleft-ellipse"></div>
@@ -1335,7 +1352,7 @@
                                 </div>
                                 <div
                                     class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                    <from class="popup_form formpopup_form">
+                                    <form id="pop6" class="popup_form">
                                         <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start Trading
                                             with AI
                                             Stocks !</p>
@@ -1365,8 +1382,10 @@
                                         <input required type="number"
                                             class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                         <button type="submit"
-                                            class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
+                                            class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-formsubmisition">Start
                                             Trading With [Nvidia]</button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -1385,7 +1404,7 @@
                             </span>Growth
                         </h2>
                         <p
-                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray ff_opensans">
+                            class="py-md-3 py-2 px-lg-0 px-sm-3 fs_xs mb-0 text-lg-start text-center lh_md fw-normal c-gray  lh-max-sm-25 ff_opensans">
                             Arista Networks: Transforming Networking with AI-Driven Solutions. Leading the charge in
                             cloud
                             networking,
@@ -1395,7 +1414,8 @@
                             opportunity to
                             capitalize on the evolution of networking in the AI stock market.</p>
                         <div class="d-flex justify-content-lg-start justify-content-center"><button id="openPopup7"
-                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read more</button>
+                                class="main-button-2 mt-md-4 mt-3 white ff_opensans lh_xsm fw-bold fs_xs">Read
+                                more</button>
                         </div>
 
                     </div>
@@ -1449,7 +1469,7 @@
                                     </div>
                                     <div
                                         class="col-xl-6 col-lg-6 col-12 d-flex justify-content-xl-end justify-content-center mt-lg-0 mt-sm-4 mt-3">
-                                        <from class="popup_form formpopup_form">
+                                        <form id="pop7" class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold off-black3 fs_4md lh_3xl">Start
                                                 Trading with
                                                 AI Stocks !</p>
@@ -1479,8 +1499,9 @@
                                             <input required type="number"
                                                 class="popup_input w-100 numberremove ff_opensans numberpopup fw-normal fs_xs text-black lh-xs mb-sm-3">
                                             <button type="submit"
-                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm popup_button popup-fromsubmisition">Start
-                                                Trading With [Nvidia]</button>
+                                                class="ff_montserrat submitpopup fw-bold w-100 mt-4 fs_xs text-white lh_xsm main-button-2 popup-formsubmisition">Start
+                                                Trading</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -1518,7 +1539,7 @@
                                 Sign
                                 up
                             </h3>
-                            <p class="c-gray mb-sm-2 pb-md-2 mb-1 fw-normal max-sm-fs-10 ff_opensans fs_xs lh_md">
+                            <p class="c-gray mb-sm-2 lh-max-sm-15 pb-md-2 mb-1 fw-normal max-sm-fs-10 ff_opensans fs_xs lh_md">
                                 Fill out the Registration Form to Get Started.
                             </p>
                             <a href="#profit"
@@ -1528,7 +1549,7 @@
                         <div class="position-absolute verifaction_max_w verification_position">
                             <h3 class="fw-bold text- text-white  ff_opensans mb-sm-2 mb-1 fs_lg lh-5xxl ">Verification
                             </h3>
-                            <p class="c-gray mb-sm-2 pb-md-2 mb-1 fw-normal max-sm-fs-10 ff_opensans fs_xs lh_md">
+                            <p class="c-gray mb-sm-2 lh-max-sm-15 pb-md-2 mb-1 fw-normal max-sm-fs-10 ff_opensans fs_xs lh_md">
                                 Schedule a Call with Our Verified AI Trading Mentors to Guide
                                 You Through Your Investment Journey
                             </p>
@@ -1541,7 +1562,7 @@
                                 Start Investing
                             </h3>
                             <p
-                                class="c-gray fw-normal mb-sm-2 pb-md-2 mb-1 ff_opensans fs_xs max-sm-fs-10 lh_md text_wrap">
+                                class="c-gray fw-normal lh-max-sm-15 mb-sm-2 pb-md-2 mb-1 ff_opensans fs_xs max-sm-fs-10 lh_md text_wrap">
                                 Begin shaping your financial future with confidence and ease.
                             </p>
                             <a href="#profit"
@@ -2176,8 +2197,9 @@
                     </div>
                     <div class="col-12 col-lg-6 ">
                         <div class="d-flex justify-content-center justify-content-lg-end align-items-center">
-                        
-                            <div class="brandGroupwidthAI"><lottie-player src="./assets/json/brands.json" speed="1" class="position-relative w-full" autoplay loop></lottie-player></div>
+
+                            <div class="brandGroupwidthAI"><lottie-player src="./assets/json/brands.json" speed="1"
+                                    class="position-relative w-full" autoplay loop></lottie-player></div>
                         </div>
                     </div>
                 </div>
@@ -2238,6 +2260,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- LOTTIE PLAYER  -->
+    <script src="./assets/js/app4.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         const options = {
@@ -2278,7 +2301,6 @@
             observer.observe(card);
         });
     </script>
-    <script src="./assets/js/app4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player"></script>
 </body>
 

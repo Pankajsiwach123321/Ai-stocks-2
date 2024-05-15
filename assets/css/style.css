@@ -2710,6 +2710,7 @@ numberinput-header .numberinput-header[type="number"] {
     padding: 25px;
     max-width: 260px;
     max-height: 280px;
+    border: 8px !important;
     width: 100%;
     background: white;
 }

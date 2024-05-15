@@ -22,6 +22,7 @@
   padding: 25px;
   max-width: 260px;
   max-height: 280px;
+  border-radius: 8px !important;
   width: 100%;
   background: white;
 }
@@ -364,8 +365,6 @@
     padding: 30px;
     max-width: 335px;
     max-height: 300px;
-    width: 100%;
-    background: white;
   }
 
   .popup_form {
@@ -468,8 +467,6 @@
     padding: 49px 59.79px 79px 27.21px;
     max-width: 375px;
     max-height: 340px;
-    width: 100%;
-    background: white;
   }
 
   .popup_form {

@@ -41,7 +41,8 @@
 
 /* Popup container / */
 .popup {
-  display: none;
+  scale: 0;
+  transition: .1s linear;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -96,7 +97,7 @@
   background-image: url('/assets/images/webp/pink-bg-popup.webp');
   background-position: center;
   background-size: cover;
-  border: 1px solid  #ffffff4d !important;
+  border: 1px solid #ffffff4d !important;
   padding: 98.5px 60px 83px;
   max-width: 1140px;
   position: absolute;

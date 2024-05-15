@@ -130,12 +130,6 @@
     color: var(--cd-gray);
 }
 
-.c-light-green {
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
-    color: transparent;
-    background-clip: text;
-}
-
 .off-black {
     color: var(--off-black);
 }
@@ -3991,6 +3985,10 @@ numberinput-header .numberinput-header[type="number"] {
 
     .mt-xl-131 {
         margin-top: 131px !important;
+    }
+
+    .mt-xl-85 {
+        margin-top: 85px !important;
     }
 }
 

@@ -580,6 +580,15 @@ const startAutomaticButtonSwitching = () => {
 
 // Start automatic button switching
 startAutomaticButtonSwitching();
+
+// max lenghth 10 in number 
+
+function checkLength(input) {
+    const maxLength = 10;
+    if (input.value.length > maxLength) {
+        input.value = input.value.slice(0, maxLength);
+    }
+}
 // preloader;
 setTimeout(() => {
     document.getElementById("preloderred").classList.add("d-none");

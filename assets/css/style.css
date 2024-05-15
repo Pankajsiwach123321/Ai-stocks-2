@@ -9,13 +9,6 @@
     box-sizing: border-box;
 }
 
-.body_bg_img {
-    background-image: url("/assets/images/webp/background-image.webp") !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 .mw_1920 {
     max-width: 1920px;
     margin-right: auto;
@@ -34,7 +27,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.ff_roboto {
+.ff_montserrat {
     font-family: "Roboto", sans-serif;
 }
 

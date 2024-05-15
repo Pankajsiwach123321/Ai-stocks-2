@@ -42,7 +42,7 @@
 /* Popup container / */
 .popup {
   scale: 0;
-  transition: .1s linear;
+  transition: .2s linear;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -557,7 +557,7 @@
 
 @media (max-width:400px) {
   .bgpopup {
-    padding: 83px 30px 84px 30px !important;
+    padding: 49px 5px 12px 12px !important;
     width: 100%;
     max-width: 320px !important;
   }

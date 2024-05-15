@@ -1609,7 +1609,7 @@
                 </div>
             </div>
         </section>
-        <!-- Average-Earnings -->
+        <!-- Average-Earnings --->
         <section class="py_average position-relative z-1 mw_1920 overflow-x-clip">
             <div class="Statisticsellips1 d-none d-xl-block"></div>
             <div class="Statisticsellips3  d-none d-xl-block"></div>
@@ -2169,8 +2169,7 @@
                     <div class="col-12 col-lg-6 ">
                         <div class="d-flex justify-content-center justify-content-lg-end align-items-center">
 
-                            <div class="brandGroupwidthAI"><lottie-player src="./assets/json/brands.json" speed="1"
-                                    class="position-relative w-full" autoplay loop></lottie-player></div>
+                            <div class="brandGroupwidthAI"><div id="lottie-animation" class="position-relative w-full"></div></lottie-player></div>
                         </div>
                     </div>
                 </div>
@@ -2272,7 +2271,22 @@
             observer.observe(card);
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.13/lottie.min.js"></script>
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/json/brands.json'
+    });
+    animation.addEventListener('DOMLoaded', function () {
+        var svgElement = animation.renderer.svgElement;
+        var stopElements = svgElement.querySelectorAll('stop');
+        for (var i = 0; i < stopElements.length; i++) {
+            stopElements[i].setAttribute('stop-color', '#D21A75');
+        }
+    });</script>
 </body>
 
 </html>

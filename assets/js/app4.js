@@ -272,7 +272,7 @@ closeButton.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup.onclick = function (event) {
     if (event.target == popup) {
         popup.style.display = "none";
         document.body.style.overflow = "";
@@ -293,7 +293,7 @@ closeButton2.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup2.onclick = function (event) {
     if (event.target == popup2) {
         popup2.style.display = "none";
         document.body.style.overflow = "";
@@ -314,7 +314,7 @@ closeButton3.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup3.onclick = function (event) {
     if (event.target == popup3) {
         popup3.style.display = "none";
         document.body.style.overflow = "";
@@ -335,7 +335,7 @@ closeButton4.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup4.onclick = function (event) {
     if (event.target == popup4) {
         popup4.style.display = "none";
         document.body.style.overflow = "";
@@ -357,7 +357,7 @@ closeButton5.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup5.onclick = function (event) {
     if (event.target == popup5) {
         popup5.style.display = "none";
         document.body.style.overflow = "";
@@ -379,7 +379,7 @@ closeButton6.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup6.onclick = function (event) {
     if (event.target == popup6) {
         popup6.style.display = "none";
         document.body.style.overflow = "";
@@ -401,7 +401,7 @@ closeButton7.onclick = function () {
     document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup7.onclick = function (event) {
     if (event.target == popup7) {
         popup7.style.display = "none";
         document.body.style.overflow = "";

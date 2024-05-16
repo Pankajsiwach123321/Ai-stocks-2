@@ -155,10 +155,6 @@
     color: var(--clr-black);
 }
 
-.green-2d {
-    color: var(--green-2d);
-}
-
 .white {
     color: var(--white);
 }
@@ -1116,10 +1112,6 @@
 
 .black-45 {
     color: var(--black-45);
-}
-
-.green-2d {
-    color: var(--green-2d);
 }
 
 .trade_btn {
@@ -3087,6 +3079,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (max-width: 1199.9px) {
+    :root {
+        --fs-lg: 26px !important;
+    }
+
     .trade_timeline::after {
         right: 2%;
     }
@@ -3097,6 +3093,7 @@ numberinput-header .numberinput-header[type="number"] {
     :root {
         --fs-xs: 14px !important;
         --fs-6lg: 25px !important;
+        --fs-lg: 22px !important;
         --fs-md: 16px !important;
         --fs-3xxl: 60.24px !important;
         --fs-8xl: 30px !important;
@@ -3168,6 +3165,7 @@ numberinput-header .numberinput-header[type="number"] {
     :root {
         --lh-7xl: 42px !important;
         --lh-9xl: 44px !important;
+        --fs-lg: 20px !important;
         --fs-xxl: 38px !important;
     }
 
@@ -3189,7 +3187,7 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-md: 16px !important;
         --fs-4md: 22px !important;
         --fs-8md: 20px !important;
-        --fs-lg: 20px !important;
+        --fs-lg: 18px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 32px !important;
         --fs-8xl: 24px !important;
